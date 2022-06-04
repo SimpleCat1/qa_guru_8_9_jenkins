@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class TestBase {
     @BeforeAll
     public static void helperDriver() {
-        Configuration.browser = "Firefox";
+//        Configuration.browser = "Firefox";
         Configuration.startMaximized = true;
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
