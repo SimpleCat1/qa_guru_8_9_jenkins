@@ -14,7 +14,7 @@ public class DemoQANegativeTests extends TestBase {
 
 
     @Test
-    public void fillingInFieldsWithData_SubmittingFormAppearsWithRightData() {
+    public void fillingInFieldsWithData() {
         open(pageData.urlSite);
         page.insertTextInFirstNameArea(pageData.firstNameText);
         page.insertTextInLastNameArea(pageData.lastNameText);

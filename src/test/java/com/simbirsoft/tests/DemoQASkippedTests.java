@@ -15,7 +15,7 @@ public class DemoQASkippedTests extends TestBase {
 
     @Disabled
     @Test
-    public void fillingInFieldsWithData_SubmittingFormAppearsWithRightData() {
+    public void fillingInFieldsWithData() {
         open(pageData.urlSite);
         page.insertTextInFirstNameArea(pageData.firstNameText);
         page.insertTextInLastNameArea(pageData.lastNameText);
