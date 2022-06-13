@@ -53,10 +53,9 @@ tasks.withType(Test) {
     }
 }
 
-task properties_tests(type: Test) {
-    systemProperty("browserSize", System.getProperty("browserSize", "400x400"))
+task simple_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "properties"
+        includeTags "Test5"
     }
 }
 

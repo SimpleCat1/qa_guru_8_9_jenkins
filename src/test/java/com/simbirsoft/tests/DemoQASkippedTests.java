@@ -3,6 +3,7 @@ package com.simbirsoft.tests;
 import com.simbirsoft.Page.PageDemoQA;
 import com.simbirsoft.data.TestData;
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -13,7 +14,7 @@ public class DemoQASkippedTests extends TestBase {
     PageDemoQA page = new PageDemoQA();
     TestData pageData = new TestData();
 
-    @Disabled
+    @Tag("Test5")
     @Test
     public void fillingInFieldsWithData() {
         open(pageData.urlSite);
