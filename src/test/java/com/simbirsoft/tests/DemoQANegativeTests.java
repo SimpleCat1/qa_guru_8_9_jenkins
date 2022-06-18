@@ -2,6 +2,7 @@ package com.simbirsoft.tests;
 
 import com.simbirsoft.Page.PageDemoQA;
 import com.simbirsoft.data.TestData;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -12,7 +13,7 @@ public class DemoQANegativeTests extends TestBase {
     PageDemoQA page = new PageDemoQA();
     TestData pageData = new TestData();
 
-
+    @Tag("Test")
     @Test
     public void fillingInFieldsWithData() {
         open(pageData.urlSite);

@@ -14,7 +14,7 @@ public class DemoQATests extends TestBase {
     PageDemoQA page = new PageDemoQA();
     TestData pageData = new TestData();
 
-    @Tag("properties")
+    @Tag("Test")
     @Test
     public void fillingInFieldsWithData() {
         open(pageData.urlSite);

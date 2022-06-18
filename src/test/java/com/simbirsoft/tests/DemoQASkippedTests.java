@@ -14,7 +14,8 @@ public class DemoQASkippedTests extends TestBase {
     PageDemoQA page = new PageDemoQA();
     TestData pageData = new TestData();
 
-    @Tag("Test5")
+    @Tag("Test")
+    @Disabled
     @Test
     public void fillingInFieldsWithData() {
         open(pageData.urlSite);
